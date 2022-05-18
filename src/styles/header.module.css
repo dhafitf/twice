@@ -1,0 +1,144 @@
+.header {
+  padding: 6px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+}
+
+.header a {
+  color: var(--main-color);
+}
+
+.header a:hover {
+  color: #434445;
+}
+
+.header.fixed a {
+  color: #434445;
+}
+
+.header.fixed a:hover {
+  color: var(--main-color);
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+.fixed {
+  background: #fafafa;
+  box-shadow: 0px 0px 2px -1px rgb(0 0 0 / 90%);
+}
+
+.navButton span {
+  position: relative;
+  z-index: 99;
+  width: 30px;
+  height: 2px;
+  background-color: #fafafa;
+  display: block;
+  margin-block: 8px;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.fixed .navButton span {
+  background: #434445;
+}
+
+.active .top {
+  transform: translateY(10px) rotate(45deg);
+  background: #434445;
+}
+
+.active .middle {
+  opacity: 0;
+}
+
+.active .bottom {
+  transform: translateY(-10px) rotate(-45deg);
+  background: #434445;
+}
+
+.active .navButton a {
+  transform: translateX(10px);
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #fafafa;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    opacity: var(--opacity);
+    transition: opacity 0.3s;
+  }
+
+  .navbar a {
+    color: #434445;
+  }
+
+  .left,
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .left li,
+  .right li {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navButton {
+    display: none;
+  }
+
+  .logo {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  .navbar {
+    display: block !important;
+    text-align: center;
+  }
+
+  .left {
+    top: 0;
+    right: 50%;
+    margin-right: 60px;
+    position: absolute;
+  }
+
+  .right {
+    top: 0;
+    left: 50%;
+    margin-left: 60px;
+    position: absolute;
+  }
+
+  .navbar ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 2rem;
+  }
+}
