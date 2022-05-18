@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Layout from "../components/layout";
+import { Layout } from "~components/layout";
 
 export default function Custom404() {
   return (
@@ -17,6 +17,8 @@ export default function Custom404() {
         h1 {
           text-align: center;
           line-height: 2rem;
+          font-size: 2rem;
+          font-weight: bold;
         }
         .button {
           background: #3a3d68;
