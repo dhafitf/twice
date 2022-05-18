@@ -11,9 +11,13 @@
   },
   "dependencies": {
     "@tanem/react-nprogress": "^4.0.10",
+    "dotenv": "^16.0.1",
+    "mongoose": "^6.3.3",
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "swr": "^1.3.0"
   },
   "devDependencies": {
     "@types/node": "17.0.21",
