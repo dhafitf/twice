@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Im Nayeon",
+    "nickname": "Nayeon",
+    "born": "1995-09-22",
+    "bloodType": "A",
+    "image": "/images/members/nayeon.jpg",
+    "instagram": "https://www.instagram.com/nayeonyny/"
+  },
+  {
+    "name": "Yoo Jeongyeon",
+    "nickname": "Jeongyeon",
+    "born": "1996-11-01",
+    "bloodType": "O",
+    "image": "/images/members/jeongyeon.jpg",
+    "instagram": "https://www.instagram.com/jy_piece/"
+  },
+  {
+    "name": "Momo Hirai",
+    "nickname": "Momo",
+    "born": "1996-11-09",
+    "bloodType": "A",
+    "image": "/images/members/momo.jpg",
+    "instagram": "https://www.instagram.com/momo/"
+  },
+  {
+    "name": "Sana Minatozaki",
+    "nickname": "Sana",
+    "born": "1996-12-29",
+    "bloodType": "B",
+    "image": "/images/members/sana.jpg",
+    "instagram": "https://www.instagram.com/m.by__sana/"
+  },
+  {
+    "name": "Park Jihyo",
+    "nickname": "Jihyo",
+    "born": "1997-02-01",
+    "bloodType": "O",
+    "image": "/images/members/jihyo.jpg",
+    "instagram": "https://www.instagram.com/_zyozyo/"
+  },
+  {
+    "name": "Mina Sharon Myoi",
+    "nickname": "Mina",
+    "born": "1997-03-24",
+    "bloodType": "A",
+    "image": "/images/members/mina.jpg",
+    "instagram": "https://www.instagram.com/mina_sr_my/"
+  },
+  {
+    "name": "Kim Dahyun",
+    "nickname": "Dahyun",
+    "born": "1998-05-28",
+    "bloodType": "O",
+    "image": "/images/members/dahyun.jpg",
+    "instagram": "https://www.instagram.com/dahhyunnee/"
+  },
+  {
+    "name": "Son Chaeyoung",
+    "nickname": "Chaeyoung",
+    "born": "1999-04-23",
+    "bloodType": "B",
+    "image": "/images/members/chaeyoung.jpg",
+    "instagram": "https://www.instagram.com/chaeyo.0/"
+  },
+  {
+    "name": "Chou Tzuyu",
+    "nickname": "Tzuyu",
+    "born": "1999-06-14",
+    "bloodType": "A",
+    "image": "/images/members/tzuyu.jpg",
+    "instagram": "https://www.instagram.com/thinkaboutzu/"
+  }
+]
