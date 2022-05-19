@@ -64,7 +64,6 @@ export interface NewsType {
 }
 
 export interface ContentItemProps {
-  _id: number;
   thumb: string;
   title: string;
   tag: string;
