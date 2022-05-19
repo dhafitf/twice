@@ -1,6 +1,7 @@
 import useSWR from "swr";
 
-export default function useData(endpoint: string) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function useData(endpoint: any) {
   const fetcher = async () => {
     const response = await fetch(endpoint);
     const data = await response.json();
