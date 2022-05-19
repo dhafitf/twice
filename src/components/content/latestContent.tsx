@@ -1,7 +1,11 @@
 import ContentItem from "./contentItem";
 import { ContentItemProps } from "~types/components";
 
-export default function LatestContent({ data }) {
+interface IContentListProps {
+  data: ContentItemProps[];
+}
+
+export default function LatestContent({ data }: IContentListProps) {
   const renderItems = () => {
     if (data) {
       return data.map((item: ContentItemProps, index: number) => {
