@@ -1,15 +1,12 @@
-import { Schema, model, models } from "mongoose";
+import { Schema, model, models, Model } from "mongoose";
+import { ContentItemProps } from "~types/components";
 
-const ContentSchema = new Schema(
-  {
-    _id: Number,
-    tag: String,
-    title: String,
-    href: String,
-    thumb: String,
-  },
-  { _id: false }
-);
+const ContentSchema = new Schema<ContentItemProps>({
+  tag: String,
+  title: String,
+  href: String,
+  thumb: String,
+});
 
-const Contents = models.Contents || model("Contents", ContentSchema, "Contents");
+const Contents = (models.Contents as Model<ContentItemProps>) || model<ContentItemProps>("Contents", ContentSchema, "Contents");
 export default Contents;
