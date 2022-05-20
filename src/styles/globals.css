@@ -814,6 +814,68 @@ article a:hover {
   cursor: pointer;
 }
 
+.apiReference {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dev_title {
+  font-size: var(--f-lg);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.dev_desc {
+  margin-bottom: 1rem;
+}
+
+.dev_ref {
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dev_endpoint span {
+  background: var(--sec-color);
+  padding: 5px;
+}
+
+.dev_endpoint {
+  display: flex;
+  flex-direction: row;
+}
+
+.dev_endpoint span:first-child {
+  font-size: var(--f-sm);
+  font-weight: 700;
+  line-height: 1.5rem;
+  padding-right: 0.4em;
+  text-transform: uppercase;
+}
+
+.dev_endpoint span:last-child {
+  font-size: var(--f-sm);
+  line-height: 1.5rem;
+}
+
+.dev_response_table thead tr:last-child {
+  border-bottom: 1px solid #000000;
+}
+
+.dev_response_table thead tr th {
+  font-size: var(--f-sm);
+  font-weight: 700;
+  text-align: left;
+}
+
+.dev_response_table tbody tr td {
+  font-size: var(--f-sm);
+  line-height: 1.5rem;
+  padding-right: 3rem;
+}
+
 @media screen and (min-width: 420px) {
   .member_block {
     grid-template-columns: repeat(2, 1fr);
