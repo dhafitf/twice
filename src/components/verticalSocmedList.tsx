@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { BsYoutube } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
@@ -26,9 +25,9 @@ const mappedList = (arrayElement: LinksProps[]) => {
   return arrayElement.map((item: LinksProps, index: number) => {
     return (
       <li key={index}>
-        <Link href={item.href}>
-          <a>{item.icon}</a>
-        </Link>
+        <a href={item.href} target="_blank" rel="noreferrer">
+          {item.icon}
+        </a>
       </li>
     );
   });
