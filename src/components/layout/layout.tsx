@@ -14,6 +14,10 @@ export default function Layout(props: LayoutProps) {
         <meta name="description" content={metaDescription} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:image" content={image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content={image} />
         <meta name="theme-color" content="#182227" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
