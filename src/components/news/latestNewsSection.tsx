@@ -10,6 +10,10 @@ export default function LatestNewsSection() {
         return <NewsItem key={item._id} items={item} />;
       });
     }
+
+    return Array.from({ length: 6 }).map((_, index) => {
+      return <NewsItem key={index} isSkeleton />;
+    });
   };
   return <div className="news_block">{renderItems()}</div>;
 }

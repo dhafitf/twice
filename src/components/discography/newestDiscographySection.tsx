@@ -10,6 +10,10 @@ export default function NewestDiscographySection() {
         return <DiscographyItem key={item._id} items={item} />;
       });
     }
+
+    return Array.from({ length: 6 }).map((_, index) => {
+      return <DiscographyItem key={index} isSkeleton />;
+    });
   };
   return <div className="discography_block">{renderItems()}</div>;
 }

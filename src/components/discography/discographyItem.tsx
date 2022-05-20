@@ -2,7 +2,7 @@ import Link from "next/link";
 import { DiscographyType } from "~types/components";
 
 interface DiscographyItemProps {
-  items: DiscographyType;
+  items?: DiscographyType;
   isSkeleton?: boolean;
 }
 
@@ -26,15 +26,8 @@ export default function DiscographyItem({ items, isSkeleton }: DiscographyItemPr
       );
     }
     return (
-      <div className="discography_item">
-        <div className="discography_thumb">
-          <img src="/images/disc.png" alt="Discography placeholder" />
-        </div>
-        <div className="discography_info">
-          <span className="discography_category"></span>
-          <h2 className="discography_title"></h2>
-          <div className="discography_releaseDate"></div>
-        </div>
+      <div className="discography_item skeleton">
+        <div className="discography_thumb skeleton"></div>
       </div>
     );
   };

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { NewsType } from "~types/components";
 
 interface NewsItemProps {
-  items: NewsType;
+  items?: NewsType;
   isSkeleton?: boolean;
 }
 
@@ -20,7 +20,7 @@ export default function NewsItem({ items, isSkeleton }: NewsItemProps) {
       );
     }
     return (
-      <div className="news_item">
+      <div className="news_item skeleton">
         <div className="news_date"></div>
         <h2 className="news_title"></h2>
       </div>
