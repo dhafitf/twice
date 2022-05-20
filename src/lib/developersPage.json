@@ -5,7 +5,7 @@
     "apiReference": [
       {
         "method": "get",
-        "endpoint": "/discography",
+        "endpoint": "/api/discography",
         "response": {
           "discography": {
             "type": "array of objects",
@@ -15,7 +15,7 @@
       },
       {
         "method": "get",
-        "endpoint": "/discography/id",
+        "endpoint": "/api/discography/id",
         "response": {
           "_id": {
             "type": "number",
@@ -67,7 +67,7 @@
     "apiReference": [
       {
         "method": "get",
-        "endpoint": "/members",
+        "endpoint": "/api/members",
         "response": {
           "name": {
             "type": "string",
@@ -103,7 +103,7 @@
     "apiReference": [
       {
         "method": "get",
-        "endpoint": "/news",
+        "endpoint": "/api/news",
         "response": {
           "news": {
             "type": "array of objects",
@@ -113,7 +113,7 @@
       },
       {
         "method": "get",
-        "endpoint": "/news/id",
+        "endpoint": "/api/news/id",
         "response": {
           "_id": {
             "type": "number",
