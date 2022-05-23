@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import styles from "~styles/footer.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -14,10 +15,10 @@ export default function Footer() {
         </Link>
         <div className={styles.link}>
           <div className={styles.official_site}>
-            <a href="https://twice.jype.com/" target="_blank" rel="noreferrer">
+            <a href="https://twice.jype.com/" target="_blank" rel="noreferrer nofollow">
               TWICE Korea Official Website
             </a>
-            <a href="https://twicejapan.com" target="_blank" rel="noreferrer">
+            <a href="https://twicejapan.com" target="_blank" rel="noreferrer nofollow">
               TWICE Japan Official Website
             </a>
           </div>
@@ -31,17 +32,17 @@ export default function Footer() {
       <div className={styles.credit}>
         <p>
           Built by{" "}
-          <a href="https://dhafit.xyz/" target="_blank" rel="noreferrer">
+          <a href="https://dhafit.xyz/" target="_blank" rel="author">
             Dhafit Farenza
           </a>
         </p>
         <p>
           All copyright reserved to{" "}
-          <a href="https://www.jype.com/" target="_blank" rel="noreferrer">
+          <a href="https://www.jype.com/" target="_blank" rel="noreferrer nofollow">
             JYPE
           </a>
           {" & "}
-          <a href="https://wmg.jp/" target="_blank" rel="noreferrer">
+          <a href="https://wmg.jp/" target="_blank" rel="noreferrer nofollow">
             Sony Music
           </a>
         </p>

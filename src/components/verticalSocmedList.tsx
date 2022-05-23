@@ -25,7 +25,7 @@ const mappedList = (arrayElement: LinksProps[]) => {
   return arrayElement.map((item: LinksProps, index: number) => {
     return (
       <li key={index}>
-        <a href={item.href} target="_blank" rel="noreferrer">
+        <a href={item.href} target="_blank" rel="noreferrer nofollow">
           {item.icon}
         </a>
       </li>
