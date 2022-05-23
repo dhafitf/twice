@@ -1,136 +1,105 @@
 [
   {
     "name": "Discography",
-    "description": "A Discography is a collection of albums by a single artist. It is a compilation of the albums released by the artist, and is often used to describe the artist's musical career.",
+    "description": "Discography from TWICE",
     "apiReference": [
       {
+        "name": "List All Discography",
         "method": "get",
         "endpoint": "/api/discography",
-        "response": {
-          "discography": {
-            "type": "array of objects",
-            "description": "An array of discography objects"
+        "response": [
+          {
+            "_id": "number",
+            "type": "string",
+            "country": "string",
+            "name": "string",
+            "releaseDate": "string",
+            "coverArt": "string",
+            "content": "string",
+            "tracks": ["string", "string"],
+            "spotifyLinks": "string",
+            "video": ["string", "string"]
           }
-        }
+        ]
       },
       {
+        "name": "Discography Details",
         "method": "get",
-        "endpoint": "/api/discography/id",
-        "response": {
-          "_id": {
+        "endpoint": "/api/discography/:id",
+        "params": [
+          {
+            "name": "id",
             "type": "number",
-            "description": "The unique identifier for the discography."
-          },
-          "type": {
-            "type": "string",
-            "description": "The type of the discography."
-          },
-          "country": {
-            "type": "string",
-            "description": "The country of the discography."
-          },
-          "name": {
-            "type": "string",
-            "description": "The name of the discography."
-          },
-          "releaseDate": {
-            "type": "string",
-            "description": "The release date of the discography."
-          },
-          "coverArt": {
-            "type": "string",
-            "description": "The cover art of the discography."
-          },
-          "content": {
-            "type": "string",
-            "description": "The content of the discography."
-          },
-          "tracks": {
-            "type": "array of strings",
-            "description": "The tracks of the discography."
-          },
-          "spotifyLinks": {
-            "type": "string",
-            "description": "The spotify links of the discography."
-          },
-          "video": {
-            "type": "array of strings",
-            "description": "The videos of the discography."
+            "description": "Discography id"
           }
+        ],
+        "response": {
+          "_id": "number",
+          "type": "string",
+          "country": "string",
+          "name": "string",
+          "releaseDate": "string",
+          "coverArt": "string",
+          "content": "string",
+          "tracks": ["string", "string"],
+          "spotifyLinks": "string",
+          "video": ["string", "string"]
         }
       }
     ]
   },
   {
     "name": "Members",
-    "description": "List members of TWICE.",
+    "description": "TWICE member list.",
     "apiReference": [
       {
+        "name": "List of Members",
         "method": "get",
         "endpoint": "/api/members",
         "response": {
-          "name": {
-            "type": "string",
-            "description": "The name of the member."
-          },
-          "nickname": {
-            "type": "string",
-            "description": "The nickname of the member."
-          },
-          "born": {
-            "type": "string",
-            "description": "The born of the member."
-          },
-          "bloodType": {
-            "type": "string",
-            "description": "The blood type of the member."
-          },
-          "image": {
-            "type": "string",
-            "description": "The image of the member."
-          },
-          "instagram": {
-            "type": "string",
-            "description": "The instagram of the member."
-          }
+          "name": "string",
+          "nickname": "string",
+          "born": "string",
+          "bloodType": "string",
+          "image": "string",
+          "instagram": "string"
         }
       }
     ]
   },
   {
     "name": "News",
-    "description": "List news of TWICE.",
+    "description": "News list from TWICE",
     "apiReference": [
       {
+        "name": "List of News",
         "method": "get",
         "endpoint": "/api/news",
-        "response": {
-          "news": {
-            "type": "array of objects",
-            "description": "An array of news objects"
+        "response": [
+          {
+            "_id": "number",
+            "title": "string",
+            "date": "string",
+            "htmlContent": "string"
           }
-        }
+        ]
       },
       {
+        "name": "News Details",
         "method": "get",
-        "endpoint": "/api/news/id",
-        "response": {
-          "_id": {
+        "endpoint": "/api/news/:id",
+        "params": [
+          {
+            "name": "id",
             "type": "number",
-            "description": "The unique identifier for the news."
-          },
-          "title": {
-            "type": "string",
-            "description": "The title of the news."
-          },
-          "date": {
-            "type": "string",
-            "description": "The date of the news."
-          },
-          "htmlContent": {
-            "type": "string",
-            "description": "The html content of the news."
+            "description": "News id"
           }
+        ],
+        "response": {
+          "_id": "number",
+          "title": "string",
+          "date": "string",
+          "htmlContent": "string"
         }
       }
     ]
