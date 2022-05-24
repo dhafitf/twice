@@ -642,6 +642,32 @@ article a:hover {
   gap: 1rem;
 }
 
+.discography_content a {
+  color: cornflowerblue;
+}
+
+.discography_content a:hover {
+  color: var(--main-color);
+}
+
+.discography_content .pre {
+  background: rgb(151 206 226);
+  padding: 10px;
+  color: #fafafa;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discography_content .pre:hover {
+  color: #182227;
+  background: #eaf199;
+  filter: drop-shadow(1px 1px 1px #cfcaca);
+}
+
 .discography_detail h2 {
   font-weight: 700;
   text-transform: uppercase;

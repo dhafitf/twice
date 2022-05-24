@@ -23,8 +23,8 @@ const DiscographyByID = () => {
 
         if (video) {
           for (const item of video) {
-            const id = item.split("=").pop();
-            youtubeID.push(`${id}`);
+            const idFromLink = item.split("=").pop();
+            youtubeID.push(`${idFromLink}`);
           }
         }
 
@@ -39,13 +39,15 @@ const DiscographyByID = () => {
                     <Image src={coverArt} width={400} height={400} alt={name} layout="responsive" />
                   </div>
                   <div className="spotify_playlist">
-                    <iframe
-                      src={`https://open.spotify.com/embed/album/${spotifyID}`}
-                      width="100%"
-                      height="380"
-                      frameBorder="0"
-                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    ></iframe>
+                    {spotifyLink && (
+                      <iframe
+                        src={`https://open.spotify.com/embed/album/${spotifyID}`}
+                        width="100%"
+                        height="380"
+                        frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                      ></iframe>
+                    )}
                   </div>
                 </div>
                 <div className="discography_info_content">
