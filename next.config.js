@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   skipLibCheck: true,
   images: {
-    domains: ["i.ytimg.com", "lv2-cdn.azureedge.net", "s3-aop.plusmember.jp", "scontent.cdninstagram.com", "v.phinf.naver.net"],
+    domains: ["i.ytimg.com", "lv2-cdn.azureedge.net", "s3-aop.plusmember.jp", "scontent.cdninstagram.com", "v.phinf.naver.net", "i0.wp.com"],
   },
 };
 
