@@ -1126,8 +1126,14 @@ article a:hover {
     float: left;
   }
 
-  .discography_info {
-    padding-left: 30%;
+  .discography_item {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+
+  .discography_thumb {
+    width: 25%;
   }
 
   .discography_item.skeleton {
@@ -1223,11 +1229,6 @@ article a:hover {
   .discography_block {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
-  }
-
-  .discography_thumb {
-    display: flex;
-    height: 100%;
   }
 
   .discography_thumb.skeleton {

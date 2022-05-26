@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { DiscographyType } from "~types/components";
+import Image from "next/image";
 
 interface DiscographyItemProps {
   items?: DiscographyType;
@@ -14,7 +15,7 @@ export default function DiscographyItem({ items, isSkeleton }: DiscographyItemPr
         <Link href="discography/[slug]" as={`discography/${_id}`} passHref>
           <a className="discography_item">
             <div className="discography_thumb">
-              <img src={coverArt} alt={name} />
+              <Image src={coverArt} alt={name} width={400} height={400} layout="responsive" placeholder="blur" blurDataURL={`/_next/image?url=${coverArt}&w=16&q=1`} />
             </div>
             <div className="discography_info">
               <span className="discography_category">{type}</span>
