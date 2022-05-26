@@ -54,7 +54,7 @@ const Home: NextPage = (data: any) => {
               />
             </h1>
             <div>
-              <Image src="/images/hero_desc.png" alt="Celebrate" draggable={false} width={1000} height={72} objectFit="cover" objectPosition="center" />
+              <Image src="/images/hero_desc.png" alt="Celebrate Date" draggable={false} width={1000} height={72} objectFit="cover" objectPosition="center" />
             </div>
           </div>
           <VerticalSocmedList />
@@ -96,7 +96,7 @@ const Home: NextPage = (data: any) => {
         </Container>
         <div className="twitter-section">
           <Container>
-            <Script async src="https://platform.twitter.com/widgets.js" charSet="utf-8" />
+            <Script strategy="lazyOnload" src="https://platform.twitter.com/widgets.js" charSet="utf-8" />
             <a className="twitter-timeline" data-height="450" href="https://twitter.com/JYPETWICE?ref_src=twsrc%5Etfw">
               Tweets by JYPETWICE
             </a>
