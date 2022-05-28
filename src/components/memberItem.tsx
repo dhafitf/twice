@@ -9,7 +9,7 @@ export default function MemberItem({ onClick, image, name, nickname }: Props) {
   return (
     <div className="member_item" onClick={onClick}>
       <div className="member_pict">
-        <Image src={image} width={400} height={400} alt={name} objectFit="cover" objectPosition="top" />
+        <Image src={image} width={400} height={400} alt={name} objectFit="cover" objectPosition="top" placeholder="blur" blurDataURL={`/_next/image?url=${image}&w=16&q=1`} />
       </div>
       <div className="member_info">
         <h2>{nickname}</h2>
