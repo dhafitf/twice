@@ -43,7 +43,7 @@ export default function Footer() {
           </a>
           {" & "}
           <a href="https://wmg.jp/" target="_blank" rel="noreferrer nofollow">
-            Sony Music
+            Warner Music
           </a>
         </p>
       </div>
